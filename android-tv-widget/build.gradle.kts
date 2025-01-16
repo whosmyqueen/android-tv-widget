@@ -3,7 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("maven-publish")
 }
-
+group = "com.github.whosmyqueen"
+version = "1.0.0"
 android {
     namespace = "com.open.androidtvwidget"
     compileSdk = 35
@@ -34,7 +35,18 @@ android {
         }
     }
 }
-
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.whosmyqueen"
+            artifactId = "android-tv-widget"
+            version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
 dependencies {
 
     implementation(libs.androidx.core.ktx)
