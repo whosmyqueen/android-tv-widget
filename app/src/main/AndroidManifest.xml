@@ -16,7 +16,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,12 +25,24 @@
         </activity>
 
         <!-- 测试DEMO Activity -->
-        <activity android:name="com.open.demo.DemoGridViewActivity" />
-        <activity android:name="com.open.demo.DemoListViewActivity" />
-        <activity android:name="com.open.demo.DemoKeyBoardActivity" />
-        <activity android:name="com.open.demo.DemoViewPagerActivity" />
-        <activity android:name="com.open.demo.DemoMenuActivity" />
-        <activity android:name="com.open.demo.DemoRecyclerviewActivity" />
+        <activity
+            android:name="com.open.demo.DemoGridViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.open.demo.DemoListViewActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.open.demo.DemoKeyBoardActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.open.demo.DemoViewPagerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.open.demo.DemoMenuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.open.demo.DemoRecyclerviewActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
