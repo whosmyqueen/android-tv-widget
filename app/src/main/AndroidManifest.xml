@@ -32,9 +32,6 @@
             android:name="com.open.demo.DemoListViewActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.open.demo.DemoKeyBoardActivity"
-            android:screenOrientation="landscape" />
-        <activity
             android:name="com.open.demo.DemoViewPagerActivity"
             android:screenOrientation="landscape" />
         <activity

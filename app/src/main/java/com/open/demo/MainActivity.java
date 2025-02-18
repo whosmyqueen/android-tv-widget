@@ -154,7 +154,7 @@ public class MainActivity extends Activity implements OnClickListener {
             startActivity(new Intent(getApplicationContext(), DemoListViewActivity.class));
         } else if (id == R.id.keyboard_lay) {
             showMsg("键盘 demo test");
-            startActivity(new Intent(getApplicationContext(), DemoKeyBoardActivity.class));
+//            startActivity(new Intent(getApplicationContext(), DemoKeyBoardActivity.class));
         } else if (id == R.id.viewpager_lay) { // viewpager页面切换测试.
             showMsg("ViewPager页面切换测试");
             startActivity(new Intent(getApplicationContext(), DemoViewPagerActivity.class));
